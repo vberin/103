@@ -1,0 +1,582 @@
+<!doctype html>
+<html ⚡ lang="uk">
+<head>
+  <meta charset="utf-8">
+  <title>Медтаксі Кривий Ріг — Перевезення лежачих хворих 103med.taxi</title>
+  <link rel="canonical" href="https://103med.taxi/index.html">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta name="description" content="🚑 Професійне перевезення хворих у Кривому Розі. 🛌 Підйом на поверх, спецтранспорт. Ціна від 800 грн. ☎️ Телефонуйте: +38 (097) 553-90-30">
+  
+  <!-- Шрифти -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- AMP Boilerplate -->
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  
+  <!-- AMP Скрипты -->
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+  <style amp-custom>
+    /* Переменные цветов из ТЗ */
+    :root {
+      --color-primary: #FF4D4D; /* Красный акцент */
+      --color-secondary: #4DD0E1; /* Мед. тил */
+      --color-text: #2C3E50; /* Темно-синий текст */
+      --color-bg: #F9F9F9;
+      --color-white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: var(--color-text);
+      background-color: var(--color-bg);
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+      padding-bottom: 80px; /* Отступ для sticky footer на мобильных */
+    }
+
+    a { text-decoration: none; color: inherit; }
+    h1, h2, h3 { margin: 0 0 1rem 0; font-weight: 700; }
+    p { margin: 0 0 1rem 0; }
+
+    /* Utilities */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .text-center { text-align: center; }
+    .text-primary { color: var(--color-primary); }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 14px;
+      transition: opacity 0.2s;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+    }
+    .btn-primary { background-color: var(--color-primary); color: white; }
+    .btn-secondary { background-color: var(--color-secondary); color: white; }
+    .btn-outline { border: 2px solid var(--color-secondary); color: var(--color-text); background: transparent; }
+    
+    /* Header */
+    header {
+      background: var(--color-white);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 10px 0;
+    }
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--color-text);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo span { color: var(--color-primary); }
+    .header-contacts { display: none; }
+    
+    @media(min-width: 768px) {
+      .header-contacts { display: block; font-weight: bold; }
+      .menu-btn { display: none; }
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.8)), url('https://images.unsplash.com/photo-1587745416684-479530166f23?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 28px;
+      color: var(--color-text);
+      line-height: 1.2;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .hero-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+
+    /* Features / Trust */
+    .features { padding: 40px 0; background: var(--color-white); }
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .feature-card {
+      padding: 20px;
+      border-radius: 10px;
+      background: #f0fbfc;
+      border: 1px solid #e1e1e1;
+      text-align: center;
+    }
+    .feature-icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: var(--color-secondary);
+    }
+
+    /* Services & Prices */
+    .services { padding: 40px 0; }
+    .price-card {
+      background: var(--color-white);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      border-left: 5px solid var(--color-primary);
+    }
+    .price-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .price-val { font-size: 20px; font-weight: 900; color: var(--color-primary); }
+
+    /* How we work */
+    .steps { padding: 40px 0; background: var(--color-white); }
+    .step-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .step-num {
+      background: var(--color-primary);
+      color: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+
+    /* Blog Section */
+    .blog-section { padding: 40px 0; background: #f4f4f4; }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .blog-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+    .blog-content { padding: 20px; }
+    .blog-title { font-size: 18px; margin-bottom: 10px; color: var(--color-text); }
+    .blog-excerpt { font-size: 14px; color: #666; margin-bottom: 15px; }
+    .blog-link { color: var(--color-primary); font-weight: bold; font-size: 14px; }
+
+    /* Reviews Section */
+    .reviews-section { padding: 40px 0; background: #eefcfd; }
+    .review-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-bottom: 15px;
+      border: 1px solid #e1e1e1;
+    }
+    .review-header { display: flex; justify-content: space-between; margin-bottom: 10px; align-items: center; }
+    .review-author { font-weight: bold; color: var(--color-text); }
+    .review-stars { color: #FFD700; } /* Gold color for stars */
+    .review-text { font-style: italic; color: #555; font-size: 14px; }
+
+    /* SEO Block - Text Mode */
+    .seo-block { padding: 50px 0; background: var(--color-white); }
+    .seo-content { max-width: 900px; margin: 0 auto; line-height: 1.8; color: #444; }
+    .seo-content h2 { color: var(--color-text); border-bottom: 2px solid var(--color-secondary); display: inline-block; padding-bottom: 5px; margin-bottom: 20px; }
+    .seo-content p { margin-bottom: 20px; font-size: 16px; }
+
+    /* Footer */
+    footer {
+      background: var(--color-text);
+      color: white;
+      padding: 30px 0;
+      padding-bottom: 100px; /* Чтобы не перекрывался sticky footer */
+    }
+    .footer-links a { display: block; padding: 5px 0; color: #ddd; }
+    
+    /* NEW: Legal Links Style */
+    .legal-links { 
+      margin-top: 20px; 
+      padding-top: 20px; 
+      border-top: 1px solid rgba(255,255,255,0.1); 
+    }
+    .legal-links a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 12px;
+      color: #aaa;
+      text-decoration: none;
+    }
+    .legal-links a:hover { color: white; text-decoration: underline; }
+
+    /* Sticky Mobile Footer */
+    .sticky-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: var(--color-white);
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+      padding: 10px;
+      display: flex;
+      gap: 10px;
+      z-index: 999;
+    }
+    .sf-btn-call {
+      width: 30%;
+      background: var(--color-secondary);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      font-size: 24px;
+    }
+    .sf-btn-order {
+      width: 70%;
+      background: var(--color-primary);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 15px 0;
+    }
+
+    /* Desktop Adjustments */
+    @media(min-width: 768px) {
+      .hero h1 { font-size: 48px; }
+      .hero-buttons { flex-direction: row; justify-content: center; }
+      .features-grid { grid-template-columns: repeat(3, 1fr); }
+      .blog-grid { grid-template-columns: repeat(3, 1fr); }
+      .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; } /* Grid for reviews on desktop */
+      .sticky-footer { display: none; } /* Скрываем на десктопе */
+      body { padding-bottom: 0; }
+      footer { padding-bottom: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar Menu (Mobile) -->
+  <amp-sidebar id="sidebar" layout="nodisplay" side="left" style="width: 250px; background: white; padding: 20px;">
+    <h3>Меню</h3>
+    <nav>
+      <ul style="list-style: none; padding: 0;">
+        <li style="margin-bottom: 15px;"><a href="#services">Послуги та Ціни</a></li>
+        <li style="margin-bottom: 15px;"><a href="calculator.html">Калькулятор</a></li>
+        <li style="margin-bottom: 15px;"><a href="#process">Як ми працюємо</a></li>
+        <li style="margin-bottom: 15px;"><a href="#blog">Корисні статті</a></li>
+        <li style="margin-bottom: 15px;"><a href="#contacts">Контакти</a></li>
+      </ul>
+    </nav>
+    <button on="tap:sidebar.close" class="btn btn-outline" style="width: 100%;">Закрити</button>
+  </amp-sidebar>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-inner">
+      <div class="logo">
+        <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="45" stroke="#4DD0E1" stroke-width="5"/>
+          <path d="M20 50H80" stroke="#FF4D4D" stroke-width="5"/>
+          <rect x="35" y="35" width="10" height="10" fill="#2C3E50"/>
+          <rect x="55" y="35" width="10" height="10" fill="#2C3E50"/>
+          <rect x="45" y="55" width="10" height="10" fill="#2C3E50"/>
+        </svg>
+        <div>103med<span>.taxi</span></div>
+      </div>
+      
+      <div class="header-contacts">
+        <a href="tel:+380975539030" style="color: var(--color-primary);">+38 (097) 553-90-30</a>
+      </div>
+
+      <button class="menu-btn" on="tap:sidebar.toggle" style="background:none; border:none; font-size:24px;">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Дбайливе перевезення лежачих хворих у Кривому Розі</h1>
+      <p>Подача авто за 30 хвилин. Від ліжка до ліжка. Нові спец-автомобілі.</p>
+      
+      <div class="hero-buttons">
+        <a href="tel:+380975539030" class="btn btn-primary">Викликати авто</a>
+        <a href="calculator.html" class="btn btn-outline" style="background: white;">Розрахувати вартість</a>
+      </div>
+
+      <div style="margin-top: 30px; position: relative; max-width: 600px; margin-left: auto; margin-right: auto;">
+         <amp-img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=600&h=350&q=80"
+                  width="600"
+                  height="350"
+                  layout="responsive"
+                  alt="Перевезення хворих"
+                  style="border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+         </amp-img>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Triggers -->
+  <section class="features">
+    <div class="container">
+      <h2 class="text-center" style="margin-bottom: 30px;">Чому нам довіряють</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🛏️</div>
+          <h3>Від ліжка до ліжка</h3>
+          <p>Включаючи спуск та підйом на поверх, навіть за відсутності ліфта.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">❄️</div>
+          <h3>Комфорт в дорозі</h3>
+          <p>М'яка підвіска, клімат-контроль та місця для супроводжуючих.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚑</div>
+          <h3>Спец. обладнання</h3>
+          <p>Вакуумні матраци, професійні ноші та крісла-каталки.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prices / Services -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="text-center" style="margin-bottom: 30px;">Послуги та Ціни</h2>
+      
+      <div class="price-card">
+        <div class="price-header">
+          <h3>Транспортування по місту</h3>
+          <span class="price-val">від 800 грн</span>
+        </div>
+        <p>Перевезення з лікарні додому, на обстеження, в пансіонат.</p>
+        <a href="tel:+380975539030" class="btn btn-primary" style="padding: 8px 16px; font-size: 12px;">Замовити</a>
+      </div>
+
+      <div class="price-card">
+        <div class="price-header">
+          <h3>Міжмісто (область)</h3>
+          <span class="price-val">від 20 грн/км</span>
+        </div>
+        <p>Дніпро, Київ, Львів. Комфортна поїздка на далекі відстані.</p>
+        <a href="tel:+380975539030" class="btn btn-primary" style="padding: 8px 16px; font-size: 12px;">Замовити</a>
+      </div>
+
+      <div class="price-card">
+        <div class="price-header">
+          <h3>Підйом на поверх</h3>
+          <span class="price-val">Включено*</span>
+        </div>
+        <p>*При наявності ліфта - безкоштовно. Без ліфта - за домовленістю.</p>
+      </div>
+      
+      <div class="text-center" style="margin-top: 20px;">
+         <a href="calculator.html" class="btn btn-secondary">Точний розрахунок вартості</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="steps">
+    <div class="container">
+      <h2 class="text-center" style="margin-bottom: 30px;">Як ми працюємо</h2>
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div>
+          <h3>Дзвінок диспетчеру</h3>
+          <p>Ви повідомляєте маршрут та стан пацієнта.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div>
+          <h3>Подача автомобіля</h3>
+          <p>Приїжджаємо точно в призначений час.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div>
+          <h3>Дбайлива поїздка</h3>
+          <p>Санітари спускають, перевозять та піднімають пацієнта.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">4</div>
+        <div>
+          <h3>Оплата</h3>
+          <p>Оплата за фактом виконаної роботи.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog-section">
+    <div class="container">
+      <h2 class="text-center" style="margin-bottom: 30px;">Корисна інформація</h2>
+      <div class="blog-grid">
+        
+        <article class="blog-card">
+          <a href="blog/post-stroke.html" style="display: block; text-decoration: none; color: inherit;">
+            <amp-img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=400&h=250&q=80" width="400" height="250" layout="responsive" alt="Лікар"></amp-img>
+            <div class="blog-content">
+              <h3 class="blog-title">Перевезення хворого після інсульту</h3>
+              <p class="blog-excerpt">Як правильно підготувати хворого до транспортування після виписки з лікарні.</p>
+              <span class="blog-link">Читати далі →</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="blog-card">
+          <a href="blog/post-hip.html" style="display: block; text-decoration: none; color: inherit;">
+            <amp-img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=400&h=250&q=80" width="400" height="250" layout="responsive" alt="Швидка"></amp-img>
+            <div class="blog-content">
+              <h3 class="blog-title">Транспортування при переломі шийки стегна</h3>
+              <p class="blog-excerpt">Особливості фіксації та перевезення пацієнтів з травмами опорно-рухового апарату.</p>
+              <span class="blog-link">Читати далі →</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="blog-card">
+          <a href="blog/post-elderly.html" style="display: block; text-decoration: none; color: inherit;">
+            <amp-img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=400&h=250&q=80" width="400" height="250" layout="responsive" alt="Догляд"></amp-img>
+            <div class="blog-content">
+              <h3 class="blog-title">Підготовка літньої людини до поїздки</h3>
+              <p class="blog-excerpt">Психологічна та фізична підготовка родичів до переїзду в пансіонат або додому.</p>
+              <span class="blog-link">Читати далі →</span>
+            </div>
+          </a>
+        </article>
+
+      </div>
+      <div class="text-center" style="margin-top: 30px;">
+          <a href="blog/index.html" class="btn btn-outline">Всі статті блогу</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section (Replaced Geo Section) -->
+  <section class="reviews-section">
+    <div class="container">
+      <h2 class="text-center" style="margin-bottom: 30px;">Відгуки клієнтів</h2>
+      
+      <div class="reviews-grid">
+          <!-- Static Review Placeholder 1 -->
+          <div class="review-card">
+            <div class="review-header">
+                <span class="review-author">Олена К.</span>
+                <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-text">"Дуже вдячні бригаді за перевезення бабусі. Хлопці приїхали вчасно, акуратно спустили з 5-го поверху без ліфта. Машина чиста і зручна."</p>
+          </div>
+
+          <!-- Static Review Placeholder 2 -->
+          <div class="review-card">
+            <div class="review-header">
+                <span class="review-author">Ігор Петрович</span>
+                <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-text">"Замовляли перевезення з лікарні додому. Все пройшло на найвищому рівні. Персонал ввічливий, машина тепла. Рекомендую!"</p>
+          </div>
+
+          <!-- Static Review Placeholder 3 -->
+          <div class="review-card">
+            <div class="review-header">
+                <span class="review-author">Марина</span>
+                <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-text">"Потрібно було перевезти лежачого хворого до іншого міста. Водій їхав дуже обережно, пацієнт дороги майже не відчув. Дякую за професіоналізм!"</p>
+          </div>
+      </div>
+
+      <p class="text-center" style="margin-top: 20px; font-size: 12px; color: #888;">* Більше відгуків скоро з'явиться на Google Maps</p>
+    </div>
+  </section>
+
+  <!-- SEO Text (Static, Unfolded) -->
+  <section class="seo-block">
+    <div class="container seo-content">
+      <h2>Детальніше про медтаксі у Кривому Розі</h2>
+      <p>Служба "103med.taxi" надає послуги санітарного перевезення лежачих хворих та інвалідів-візочників у Кривому Розі та Дніпропетровській області. Ми розуміємо, як важливо забезпечити комфорт та безпеку під час транспортування людей з обмеженими можливостями.</p>
+      <p>Наші автомобілі обладнані спеціальними демпферними ношами, які гасять тряску, а досвідчені санітари знають, як правильно перекласти людину з ліжка на ноші (методом "Накат") без болю та стресу.</p>
+      <p>Ми працюємо цілодобово і готові прийти на допомогу у будь-який момент. Наш автопарк складається з сучасних спеціалізованих автомобілів, оснащених усім необхідним для безпечного та комфортного перевезення пацієнтів будь-якої важкості.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contacts">
+    <div class="container text-center">
+      <div class="logo" style="justify-content: center; margin-bottom: 20px; color: white;">
+        103med<span>.taxi</span>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Послуги</a>
+        <a href="calculator.html">Калькулятор</a>
+        <a href="#blog">Блог</a>
+        <a href="#">Контакти</a>
+      </div>
+      
+      <!-- NEW: Google Ads required policies -->
+      <div class="legal-links">
+        <a href="#">Політика конфіденційності</a>
+        <a href="#">Угода користувача</a>
+        <a href="#">Відмова від відповідальності</a>
+      </div>
+
+      <p style="margin-top: 20px; font-size: 12px; color: #888;">© 2025 Служба перевезення хворих Кривий Ріг.</p>
+    </div>
+  </footer>
+
+  <!-- Sticky Footer (Mobile Only) -->
+  <div class="sticky-footer">
+    <a href="tel:+380975539030" class="sf-btn-call" aria-label="Зателефонувати">
+      📞
+    </a>
+    <a href="tel:+380975539030" class="sf-btn-order">
+      Викликати авто
+    </a>
+  </div>
+
+</body>
+</html>
