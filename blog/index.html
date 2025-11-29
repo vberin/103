@@ -5,7 +5,7 @@
   <title>Блог про перевезення хворих - 103med.taxi</title>
   <link rel="canonical" href="https://103med.taxi/blog/index.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <meta name="description" content="Корисні статті та поради щодо перевезення лежачих хворих, інвалідів та людей похилого віку.">
+  <meta name="description" content="Енциклопедія для родичів лежачих хворих: поради з догляду, підготовка до транспортування, особливості перевезення при різних діагнозах.">
   
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -13,7 +13,6 @@
   <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 
   <style amp-custom>
-    /* Стилі ідентичні головній сторінці */
     :root { --color-primary: #FF4D4D; --color-secondary: #4DD0E1; --color-text: #2C3E50; --color-bg: #F9F9F9; --color-white: #ffffff; }
     body { font-family: 'Roboto', sans-serif; color: var(--color-text); background-color: var(--color-bg); margin: 0; padding-bottom: 80px; }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; }
@@ -27,11 +26,11 @@
 
     .blog-section { padding: 40px 0; }
     .blog-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
-    .blog-card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.2s; }
-    .blog-content { padding: 20px; }
-    .blog-title { font-size: 18px; margin-bottom: 10px; font-weight: 700; }
-    .blog-excerpt { font-size: 14px; color: #666; margin-bottom: 15px; }
-    .blog-link { color: var(--color-primary); font-weight: bold; font-size: 14px; }
+    .blog-card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.2s; display: flex; flex-direction: column; }
+    .blog-content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+    .blog-title { font-size: 18px; margin-bottom: 10px; font-weight: 700; color: var(--color-text); }
+    .blog-excerpt { font-size: 14px; color: #666; margin-bottom: 15px; line-height: 1.5; }
+    .blog-link { color: var(--color-primary); font-weight: bold; font-size: 14px; text-transform: uppercase; }
 
     .sticky-footer { position: fixed; bottom: 0; left: 0; width: 100%; background: var(--color-white); box-shadow: 0 -2px 10px rgba(0,0,0,0.1); padding: 10px; display: flex; gap: 10px; z-index: 999; }
     .sf-btn-call { width: 30%; background: var(--color-secondary); color: white; display: flex; align-items: center; justify-content: center; border-radius: 8px; font-size: 24px; }
@@ -50,7 +49,7 @@
     <div class="container header-inner">
       <a href="../index.html" class="logo">
         <svg width="40" height="40" viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="45" stroke="#4DD0E1" stroke-width="5"/><path d="M20 50H80" stroke="#FF4D4D" stroke-width="5"/><rect x="35" y="35" width="10" height="10" fill="#2C3E50"/><rect x="55" y="35" width="10" height="10" fill="#2C3E50"/><rect x="45" y="55" width="10" height="10" fill="#2C3E50"/></svg>
-        <div>103<span>.taxi</span></div>
+        <div>103med<span>.taxi</span></div>
       </a>
       <a href="../index.html" style="color: var(--color-secondary); font-weight: bold; font-size: 14px;">← На головну</a>
     </div>
@@ -58,40 +57,126 @@
 
   <section class="blog-section">
     <div class="container">
-      <h1 class="text-center" style="margin-bottom: 40px;">Блог та корисна інформація</h1>
+      <h1 class="text-center" style="margin-bottom: 10px;">Експертний блог 103med.taxi</h1>
+      <p class="text-center" style="margin-bottom: 40px; color: #666; max-width: 600px; margin-left: auto; margin-right: auto;">Все, що потрібно знати про перевезення лежачих хворих: від підготовки до догляду вдома.</p>
+      
       <div class="blog-grid">
         
-        <!-- Стаття 1 -->
+        <!-- 1. Діагностика (НОВА) -->
         <article class="blog-card">
-          <a href="post-stroke.html" style="display: block; text-decoration: none; color: inherit;">
-            <amp-img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=400&h=250&q=80" width="400" height="250" layout="responsive" alt="Лікар"></amp-img>
+          <a href="post-diagnostics.html" style="text-decoration: none; color: inherit;">
+            <amp-img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=400&h=250&q=80" width="400" height="250" layout="responsive" alt="МРТ діагностика"></amp-img>
             <div class="blog-content">
-              <h3 class="blog-title">Перевезення хворого після інсульту</h3>
-              <p class="blog-excerpt">Як правильно підготувати хворого до транспортування після виписки з лікарні.</p>
+              <h3 class="blog-title">Поїздка на МРТ або КТ: покрокова інструкція</h3>
+              <p class="blog-excerpt">Як організувати транспортування на обстеження, скільки чекає машина та як перекласти хворого на стіл томографа.</p>
               <span class="blog-link">Читати далі →</span>
             </div>
           </a>
         </article>
 
-        <!-- Стаття 2 -->
+        <!-- 2. Ціноутворення (НОВА) -->
         <article class="blog-card">
-          <a href="post-hip.html" style="display: block; text-decoration: none; color: inherit;">
-            <amp-img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=400&h=250&q=80" width="400" height="250" layout="responsive" alt="Швидка"></amp-img>
+          <a href="post-pricing.html" style="text-decoration: none; color: inherit;">
+            <amp-img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=400&h=250&q=80" width="400" height="250" layout="responsive" alt="Вартість послуг"></amp-img>
             <div class="blog-content">
-              <h3 class="blog-title">Транспортування при переломі шийки стегна</h3>
-              <p class="blog-excerpt">Особливості фіксації та перевезення пацієнтів з травмами опорно-рухового апарату.</p>
+              <h3 class="blog-title">З чого складається вартість перевезення?</h3>
+              <p class="blog-excerpt">Чому спецтранспорт коштує дорожче за таксі? Розбираємо вплив поверхів, ваги пацієнта та кілометражу на ціну.</p>
               <span class="blog-link">Читати далі →</span>
             </div>
           </a>
         </article>
 
-        <!-- Стаття 3 -->
+        <!-- 3. Безпека (НОВА) -->
         <article class="blog-card">
-          <a href="post-elderly.html" style="display: block; text-decoration: none; color: inherit;">
-            <amp-img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=400&h=250&q=80" width="400" height="250" layout="responsive" alt="Догляд"></amp-img>
+          <a href="post-safety.html" style="text-decoration: none; color: inherit;">
+            <amp-img src="https://images.unsplash.com/photo-1616391182219-e080b4d1043a?auto=format&fit=crop&w=400&h=250&q=80" width="400" height="250" layout="responsive" alt="Безпека в авто"></amp-img>
+            <div class="blog-content">
+              <h3 class="blog-title">Безпека понад усе: як обладнані наші авто</h3>
+              <p class="blog-excerpt">Про демпферні ноші, вакуумні матраци та фіксацію пацієнта під час руху. Чому це важливо для травмованих.</p>
+              <span class="blog-link">Читати далі →</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- 4. Виписка -->
+        <article class="blog-card">
+          <a href="post-hospital-discharge.html" style="text-decoration: none; color: inherit;">
+            <amp-img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=400&h=250&q=80" width="400" height="250" layout="responsive" alt="Виписка з лікарні"></amp-img>
+            <div class="blog-content">
+              <h3 class="blog-title">Підготовка до виписки з лікарні</h3>
+              <p class="blog-excerpt">Чек-лист для родичів: документи, одяг, підготовка квартири та замовлення спецтранспорту.</p>
+              <span class="blog-link">Читати далі →</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- 5. Міжмісто -->
+        <article class="blog-card">
+          <a href="post-long-distance.html" style="text-decoration: none; color: inherit;">
+            <amp-img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=400&h=250&q=80" width="400" height="250" layout="responsive" alt="Дорога між містами"></amp-img>
+            <div class="blog-content">
+              <h3 class="blog-title">Перевезення на далекі відстані</h3>
+              <p class="blog-excerpt">Гігієна в дорозі, харчування та чому важливо обирати авто з пневмопідвіскою для міжміських поїздок.</p>
+              <span class="blog-link">Читати далі →</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- 6. Інсульт -->
+        <article class="blog-card">
+          <a href="post-stroke.html" style="text-decoration: none; color: inherit;">
+            <amp-img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=400&h=250&q=80" width="400" height="250" layout="responsive" alt="Інсульт"></amp-img>
+            <div class="blog-content">
+              <h3 class="blog-title">Транспортування після інсульту</h3>
+              <p class="blog-excerpt">Специфіка перевезення неврологічних хворих: положення голови та контроль стану в дорозі.</p>
+              <span class="blog-link">Читати далі →</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- 7. Перелом -->
+        <article class="blog-card">
+          <a href="post-hip.html" style="text-decoration: none; color: inherit;">
+            <amp-img src="https://images.unsplash.com/photo-1628595351029-c2bf17511435?auto=format&fit=crop&w=400&h=250&q=80" width="400" height="250" layout="responsive" alt="Травматологія"></amp-img>
+            <div class="blog-content">
+              <h3 class="blog-title">Перелом шийки стегна: правила перевезення</h3>
+              <p class="blog-excerpt">Як уникнути болю при транспортуванні травмованих літніх людей. Використання вакуумних матраців.</p>
+              <span class="blog-link">Читати далі →</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- 8. Порівняння з таксі -->
+        <article class="blog-card">
+          <a href="post-why-medtaxi.html" style="text-decoration: none; color: inherit;">
+            <amp-img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=400&h=250&q=80" width="400" height="250" layout="responsive" alt="Медтаксі авто"></amp-img>
+            <div class="blog-content">
+              <h3 class="blog-title">Чому звичайне таксі не підходить?</h3>
+              <p class="blog-excerpt">Ризики перевезення "на задньому сидінні" для пацієнтів після операцій або травм.</p>
+              <span class="blog-link">Читати далі →</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- 9. Підготовка літніх -->
+        <article class="blog-card">
+          <a href="post-elderly.html" style="text-decoration: none; color: inherit;">
+            <amp-img src="https://images.unsplash.com/photo-1459679749680-18eb1eb37418?auto=format&fit=crop&w=400&h=250&q=80" width="400" height="250" layout="responsive" alt="Літні люди"></amp-img>
             <div class="blog-content">
               <h3 class="blog-title">Підготовка літньої людини до поїздки</h3>
               <p class="blog-excerpt">Психологічна та фізична підготовка родичів до переїзду в пансіонат або додому.</p>
+              <span class="blog-link">Читати далі →</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- 10. Догляд вдома -->
+        <article class="blog-card">
+          <a href="post-home-care-tips.html" style="text-decoration: none; color: inherit;">
+            <amp-img src="https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?auto=format&fit=crop&w=400&h=250&q=80" width="400" height="250" layout="responsive" alt="Догляд вдома"></amp-img>
+            <div class="blog-content">
+              <h3 class="blog-title">Догляд за лежачим хворим вдома</h3>
+              <p class="blog-excerpt">Облаштування кімнати, профілактика пролежнів та перші дні після лікарні.</p>
               <span class="blog-link">Читати далі →</span>
             </div>
           </a>
