@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://103med.taxi/sitemap.xml
