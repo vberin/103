@@ -2,63 +2,162 @@
 <html ⚡ lang="uk">
 <head>
   <meta charset="utf-8">
-  <title>Транспортування при переломі шийки стегна - 103med.taxi</title>
+  <title>Перевезення при переломі шийки стегна - 103med.taxi</title>
   <link rel="canonical" href="https://103med.taxi/blog/post-hip.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
   
   <style amp-custom>
-    /* Скорочений CSS для економії місця, ідентичний попередньому */
-    :root { --color-primary: #FF4D4D; --color-secondary: #4DD0E1; --color-text: #2C3E50; --color-bg: #F9F9F9; }
-    body { font-family: 'Roboto', sans-serif; color: var(--color-text); background: var(--color-bg); padding-bottom: 80px; margin: 0; }
+    /* VARIABLES */
+    :root { --color-primary: #FF4D4D; --color-secondary: #4DD0E1; --color-text: #2C3E50; --color-bg: #F9F9F9; --color-white: #ffffff; }
+    * { box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; color: var(--color-text); background-color: var(--color-bg); margin: 0; padding-bottom: 80px; line-height: 1.6; }
     .container { max-width: 800px; margin: 0 auto; padding: 0 15px; }
     a { text-decoration: none; color: inherit; }
-    header { background: white; padding: 10px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+    
+    /* BUTTONS */
+    .btn { display: inline-block; padding: 12px 24px; border-radius: 50px; font-weight: 700; text-transform: uppercase; font-size: 14px; border: none; cursor: pointer; text-align: center; transition: 0.2s; text-decoration: none; }
+    .btn-primary { background-color: var(--color-primary); color: white; box-shadow: 0 4px 10px rgba(255, 77, 77, 0.3); }
+    .btn-outline { border: 2px solid var(--color-secondary); color: var(--color-text); background: transparent; }
+
+    /* HEADER & SIDEBAR */
+    header { background: var(--color-white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); padding: 15px 0; position: sticky; top: 0; z-index: 100; }
     .header-inner { display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-size: 24px; font-weight: 900; display: flex; align-items: center; gap: 10px; }
+    
+    /* TEXT LOGO */
+    .logo { font-size: 26px; font-weight: 900; color: var(--color-text); display: flex; align-items: center; text-decoration: none; line-height: 1; letter-spacing: -0.5px; }
     .logo span { color: var(--color-primary); }
-    .article-content { background: white; padding: 30px 20px; border-radius: 10px; margin-top: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-    h1 { color: var(--color-text); line-height: 1.3; margin-top: 0; }
-    h2 { color: var(--color-primary); margin-top: 30px; }
-    p { margin-bottom: 20px; line-height: 1.6; }
-    .sticky-footer { position: fixed; bottom: 0; width: 100%; background: white; padding: 10px; display: flex; gap: 10px; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); z-index: 999; }
-    .sf-btn-call { width: 30%; background: var(--color-secondary); color: white; display: flex; justify-content: center; align-items: center; border-radius: 8px; font-size: 24px; }
-    .sf-btn-order { width: 70%; background: var(--color-primary); color: white; display: flex; justify-content: center; align-items: center; border-radius: 8px; font-weight: bold; text-transform: uppercase; padding: 15px 0; }
-    @media(min-width: 768px) { .sticky-footer { display: none; } body { padding-bottom: 0; } }
+    
+    .header-contacts { display: none; font-weight: bold; }
+    .header-phone { color: var(--color-primary); font-size: 20px; }
+
+    /* ARTICLE */
+    .article-content { background: white; padding: 30px; border-radius: 12px; margin-top: 20px; margin-bottom: 40px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+    h1 { margin-top: 0; font-size: 28px; line-height: 1.2; margin-bottom: 20px; }
+    h2 { margin-top: 30px; font-size: 22px; color: var(--color-primary); border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 20px; }
+    p { margin-bottom: 15px; font-size: 16px; color: #444; }
+    ul { margin-bottom: 20px; padding-left: 20px; list-style-type: disc; }
+    li { margin-bottom: 10px; color: #444; }
+    
+    .highlight-box { background: #eefcfd; border-left: 5px solid var(--color-secondary); padding: 20px; margin: 30px 0; border-radius: 4px; }
+    
+    .cta-block { background: var(--color-text); color: white; padding: 30px; text-align: center; border-radius: 12px; margin-top: 40px; }
+    .cta-block h3 { margin-top: 0; color: white; }
+    .cta-block p { color: #ccc; }
+
+    /* FOOTER */
+    footer { background: var(--color-text); color: white; padding: 50px 0 120px; text-align: center; margin-top: auto; }
+    .footer-links a { display: block; padding: 8px 0; color: #ccc; transition: 0.2s; font-size: 16px; }
+    .footer-links a:hover { color: white; }
+    .legal-links { margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); }
+    .legal-links a { display: inline-block; margin: 0 15px; font-size: 13px; color: #888; text-decoration: none; }
+
+    /* STICKY FOOTER */
+    .sticky-footer { position: fixed; bottom: 0; left: 0; width: 100%; background: var(--color-white); box-shadow: 0 -2px 15px rgba(0,0,0,0.1); padding: 15px; display: flex; gap: 10px; z-index: 999; }
+    .sf-btn-call { width: 60px; background: var(--color-secondary); color: white; display: flex; align-items: center; justify-content: center; border-radius: 12px; font-size: 28px; text-decoration: none; }
+    .sf-btn-order { flex-grow: 1; background: var(--color-primary); color: white; display: flex; align-items: center; justify-content: center; border-radius: 12px; font-weight: 800; text-transform: uppercase; font-size: 16px; text-decoration: none; box-shadow: 0 4px 10px rgba(255, 77, 77, 0.3); }
+
+    @media(min-width: 768px) {
+      .header-contacts { display: block; }
+      .menu-btn { display: none; }
+      .sticky-footer { display: none; }
+      body { padding-bottom: 0; }
+      footer { padding-bottom: 50px; }
+    }
   </style>
 </head>
 <body>
 
+  <!-- Sidebar -->
+  <amp-sidebar id="sidebar" layout="nodisplay" side="left" style="width: 280px; background: white; padding: 30px 20px;">
+    <h3 style="margin-bottom: 30px; font-size: 22px;">Меню</h3>
+    <nav>
+      <ul style="list-style: none; padding: 0;">
+        <li style="margin-bottom: 20px;"><a href="../index.html" style="font-size: 18px; font-weight: 500; color: #2C3E50;">Головна</a></li>
+        <li style="margin-bottom: 20px;"><a href="../index.html#services" style="font-size: 18px; font-weight: 500; color: #2C3E50;">Послуги та Ціни</a></li>
+        <li style="margin-bottom: 20px;"><a href="index.html" style="font-size: 18px; font-weight: 500; color: #2C3E50;">Блог</a></li>
+        <li style="margin-bottom: 20px;"><a href="../contacts.html" style="font-size: 18px; font-weight: 500; color: #2C3E50;">Контакти</a></li>
+      </ul>
+    </nav>
+    <div style="margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
+        <a href="tel:+380975539030" style="display:block; font-size: 20px; font-weight: bold; color: var(--color-primary); margin-bottom: 10px;">+38 (097) 553-90-30</a>
+    </div>
+    <button on="tap:sidebar.close" class="btn-outline" style="width: 100%; margin-top: 20px;">Закрити</button>
+  </amp-sidebar>
+
+  <!-- Header -->
   <header>
     <div class="container header-inner">
-        <a href="../index.html" class="logo">
-           <svg width="30" height="30" viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="45" stroke="#4DD0E1" stroke-width="5"/><path d="M20 50H80" stroke="#FF4D4D" stroke-width="5"/><rect x="35" y="35" width="10" height="10" fill="#2C3E50"/><rect x="55" y="35" width="10" height="10" fill="#2C3E50"/><rect x="45" y="55" width="10" height="10" fill="#2C3E50"/></svg>
-           103<span>.taxi</span>
-        </a>
-        <a href="index.html" style="color: var(--color-secondary); font-weight: bold; font-size: 14px;">← Усі статті</a>
+      <a href="../index.html" class="logo">103med<span>.taxi</span></a>
+      <div class="header-contacts">
+        <a href="tel:+380975539030" class="header-phone">+38 (097) 553-90-30</a>
+      </div>
+      <button class="menu-btn" on="tap:sidebar.toggle" style="background:none; border:none; font-size:32px; cursor: pointer; line-height: 1;">☰</button>
     </div>
   </header>
 
   <div class="container">
+    <div style="margin-top: 20px;">
+        <a href="index.html" style="font-weight: bold; color: var(--color-secondary); font-size: 14px;">← Повернутися до всіх статей</a>
+    </div>
+
     <article class="article-content">
       <h1>Транспортування при переломі шийки стегна</h1>
-      <amp-img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&h=400&q=80" width="800" height="400" layout="responsive" style="border-radius: 8px; margin-bottom: 20px;"></amp-img>
+      <p style="color: #888; font-size: 14px; margin-bottom: 20px;">Час читання: 3 хвилини</p>
+      
+      <amp-img src="../content/hip-fracture.webp" width="800" height="400" layout="responsive" style="border-radius: 12px; margin-bottom: 30px; background-color: #eee;" alt="Рентген перелому стегна">
+        <amp-img fallback src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&h=400&q=80" width="800" height="400" layout="responsive"></amp-img>
+      </amp-img>
 
-      <p>Перелом шийки стегна — одна з найнебезпечніших травм для людей похилого віку. Головна задача при перевезенні — повна іммобілізація (знерухомлення) пошкодженої ділянки.</p>
+      <p>Перелом шийки стегна — одна з найнебезпечніших травм для людей похилого віку. Головна задача при перевезенні — повна іммобілізація (знерухомлення) пошкодженої ділянки, щоб уникнути зміщення кісток та больового шоку.</p>
 
-      <h2>Як ми це робимо?</h2>
-      <p>Ми використовуємо <strong>вакуумний матрац</strong>. Це спеціальний пристрій, який набуває форми тіла пацієнта і стає жорстким після відкачування повітря. Це дозволяє зафіксувати людину в максимально комфортному положенні і уникнути болю на вибоїнах.</p>
+      <h2>Як ми фіксуємо пацієнта?</h2>
+      <p>Ми використовуємо професійний <strong>вакуумний матрац</strong>. Це спеціальний медичний засіб, який спочатку м'який, але після відкачування повітря стає твердим "коконом", що ідеально повторює контури тіла. Це дозволяє:</p>
+      <ul>
+        <li>Надійно зафіксувати таз та ноги.</li>
+        <li>Зменшити вібрації від дороги.</li>
+        <li>Забезпечити комфорт пацієнту навіть при тривалій поїздці.</li>
+      </ul>
 
       <h2>Підйом на поверх</h2>
-      <p>Наші санітари використовують м'які ноші або спеціальні крісла, щоб підняти пацієнта без ліфта, не змінюючи положення пошкодженої ноги.</p>
+      <p>Наші санітари використовують м'які ноші або спеціальні крісла для підйому пацієнта без ліфта. Головне правило — хвора нога має залишатися у спокої. Ми працюємо злагодженою командою, щоб уникнути різких рухів.</p>
+
+      <div class="cta-block">
+        <h3>Потрібне безпечне перевезення з переломом?</h3>
+        <p>Довірте цю складну задачу професіоналам.</p>
+        <a href="tel:+380975539030" class="btn btn-primary" style="margin-top: 10px;">Викликати бригаду</a>
+      </div>
     </article>
   </div>
+
+  <footer>
+    <div class="container text-center">
+      <div class="logo" style="justify-content: center; margin-bottom: 20px; color: white;">
+         <div>103med<span>.taxi</span></div>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">Головна</a>
+        <a href="../index.html#services">Послуги</a>
+        <a href="index.html">Блог</a>
+        <a href="../contacts.html">Контакти</a>
+      </div>
+      <div class="legal-links">
+        <a href="../privacy-policy.html">Політика конфіденційності</a>
+        <a href="../terms-of-service.html">Угода користувача</a>
+        <a href="../disclaimer.html">Відмова від відповідальності</a>
+      </div>
+      <p style="margin-top: 20px; font-size: 12px; color: #888;">© 2025 103med.taxi</p>
+    </div>
+  </footer>
 
   <div class="sticky-footer">
     <a href="tel:+380975539030" class="sf-btn-call">📞</a>
     <a href="tel:+380975539030" class="sf-btn-order">Викликати авто</a>
   </div>
+
 </body>
 </html>
